@@ -1,0 +1,9 @@
+<div class="">
+  <<ng-content select="selector"></ng-content>
+  <div class="" *ngIf="errorDirective.ngControl.control?.errors">
+    {{
+      errorDirective.ngControl.control?.errors
+        | error : errorDirective : errorDirective.ngControl?.touched
+    }}
+  </div>
+</div>
